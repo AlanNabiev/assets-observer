@@ -32,7 +32,7 @@ const cardClasses = classnames(
   borderWidth('border'),
   transitionProperty('transition-all'),
   padding('px-5', 'py-8'),
-  maxWidth('md:max-w-sm'),
+  maxWidth('md:max-w-full'),
   borderRadius('rounded-lg')
 )
 
