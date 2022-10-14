@@ -1,10 +1,8 @@
 import axios, { type AxiosInstance, type AxiosResponse } from 'axios'
-import { injectable } from 'tsyringe'
 
 export type httpHeaders = Readonly<Record<string, string>>
 export type httpURL = Readonly<string>
 
-@injectable()
 export class httpClientFactory {
   private httpClient: AxiosInstance
   constructor(baseURL: httpURL, headers: httpHeaders) {

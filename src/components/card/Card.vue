@@ -71,7 +71,7 @@ const formattedAsset = computed(() => {
   }
 })
 
-const assetsService = inject('assetsService') as AssetsService
+const assetsService: AssetsService = inject('assetsService')
 
 function toggleLikedById(id: string, value: boolean): void {
   assetsService.setLikedById(id, !value)
